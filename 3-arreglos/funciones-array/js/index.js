@@ -28,3 +28,9 @@ document.write(`<p style= "font-size: 30px; color: red">Para solo extraer un nom
 nombres.at(2);
 document.write(`<p>${nombres.at(2)}</p>`)
 document.write(`<p>${nombres.at(-1)}</p>`)
+
+// Para borrar a partir de que posicion y cuantos.
+document.write(`<p style= "font-size: 30px; color: red">Para borrar a partir de que posicion y cuantos.</p>`)
+nombres.splice(2, 1)
+document.write(`<p>${nombres}</p>`)
+

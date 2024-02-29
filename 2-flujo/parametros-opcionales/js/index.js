@@ -1,3 +1,5 @@
+// Los parametros opcionales deben ir siempre en ultimo lugar
+
 function saludar(nombre, apellidos = '') {
     return `Hola ${nombre} ${apellidos}`;
 }

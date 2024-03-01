@@ -27,3 +27,6 @@ const alumnos = [
     { nombre: 'Ana', nota: 6 },
     { nombre: 'Darwin', nota: 8 },
 ]
+const primerAprobado = alumnos.find((alumno) => alumno.nota >= 5)
+
+console.log(primerAprobado)

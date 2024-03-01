@@ -1,0 +1,11 @@
+let segundos = prompt('Introduce la cantidad de segundos que quieres calcular en horas');
+let minutos = segundos / 60;
+let horas = Math.floor(segundos / (60*60));
+document.write(`<p>${segundos} segundos.</p>`);
+document.write(`<p>${minutos} minutos.</p>`);
+document.write(`<p>${horas} horas.</p>`);
+let segundosSobrantes = (segundos % 60);
+let minutosSobrantes = Math.floor((minutos % 60));
+document.write(`<p>${minutosSobrantes} minutos.</p>`);
+document.write(`<p>${segundosSobrantes} segundos.</p>`);
+document.write(`<div style="display: flex; flex-direction: row; color: white; align-items: center;"><p style="display: flex; flex-direction: row; color: white;">El total es <div style="color: red;"> ${horas}</div> horas, <div style="color: yellow"> ${minutosSobrantes} </div> minutos y <div style="color: blue"> ${segundosSobrantes} </div> segundos.</p></div>`);

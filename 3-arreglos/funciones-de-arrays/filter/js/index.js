@@ -26,32 +26,41 @@ let suspensos = "";
 
 
 function mirarNotas(alumnos) {
-    const suspensos = alumnos.filter((alumno) => alumno.nota <= 4) 
+    const alumnosAprobados = alumnos.filter(alumno => alumno.nota >= 5);
+    const alumnosSuspensos = alumnos.filter(alumno => alumno.nota < 5);
+    /*const suspensos = alumnos.filter((alumno) => alumno.nota <= 4) 
     const aprobados = alumnos.filter((alumno) => alumno.nota >= 5) 
     return {suspensos:suspensos,
         aprobados:aprobados
     };
-    // return aprobados;
+    // return aprobados;*/
+    return{ aprobados: alumnosAprobados,
+            suspensos: alumnosSuspensos
+    };
 }
 
-const resultado = mirarNotas(alumnos);
-
-
+resultado = mirarNotas(alumnos);
 console.log(resultado.aprobados);
 console.log(resultado.suspensos);
 
-document.write(resultado.aprobados)
+ 
+
+
+/*console.log(resultado.aprobados);
+console.log(resultado.suspensos);
+
+document.write(`${resultado.aprobados}`)*/
 
 
 const frutas = ['manzana', 'pera', 'platano', 'uvas'];
 
-let frutaBuscada ="";
+//let frutaBuscada ="";
 function buscarFrutasPorLongitud(longitud) {
     const frutaBuscada = frutas.filter((fruta) => fruta.length <= longitud) 
     return frutaBuscada;
 }
-buscarFrutasPorLongitud(5);
+const frutasEncontradas = buscarFrutasPorLongitud(5);
 
-console.log(frutaBuscada)
+console.log(frutasEncontradas)
 
 // Trabajo para casa agrandar el array a 10 elementos y separar en alumnos suspenso y aprobados.

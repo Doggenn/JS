@@ -212,7 +212,7 @@ for (let i = 0; i < miCamino.cimas.length; i++) {
  }
 
 //5º: para llegar a la cima tendremos que darnos aliento y decirnos la frase que esta divida y que tiene que quedar así: "Tranquilo,lo peor ha pasado ya.¡Animo!
-
+/*
 let cima = '';
 let cumbre = [];
 for (let i = 0; i < miCamino.subiendoAlEverest.length; i++) {
@@ -236,7 +236,8 @@ for (let i = 0; i < miCamino.subiendoAlEverest.length; i++) {
     }
   }
 }
-
+*/
+/*
 console.log(cima)
 console.log(cumbre);
 let cima2 = '';
@@ -255,8 +256,18 @@ for (const campo1 of miCamino.subiendoAlEverest) {
   }
 }
 console.log(cima2)
-
-console.log(miCamino.subiendoAlEverest[0][0].campoBase[0].campoI.campoII.campoIII.campoIV)
+*/
+/*
+console.log(`${miCamino.subiendoAlEverest[0][0].campoBase[0].campoI.campoII.campoIII.campoIV[0]} ${miCamino.subiendoAlEverest[0][0].campoBase[0].campoI.campoII.campoIII.campoIV[1]} ${miCamino.subiendoAlEverest[0][0].campoBase[0].campoI.campoII.campoIII.campoIV[2]} ${miCamino.subiendoAlEverest[0][0].campoBase[0].campoI.campoII.campoIII.campoIV[3]} ${miCamino.subiendoAlEverest[0][0].campoBase[0].campoI.campoII.campoIII.campoIV[4]} ${miCamino.subiendoAlEverest[0][0].campoBase[0].campoI.campoII.campoIII.campoIV[5]} ${miCamino.subiendoAlEverest[0][0].campoBase[0].campoI.campoII.campoIII.campoIV[6]} ${miCamino.subiendoAlEverest[0][0].campoBase[0].campoI.campoII.campoIII.campoIV[7]} `)*/
+const recorrido = miCamino.subiendoAlEverest[0][0].campoBase[0].campoI.campoII.campoIII.campoIV;
+let frase = '';
+for (let i = 0; i < recorrido.length; i++) {
+  const element = recorrido[i];
+  if (typeof element === 'string') {
+    frase = (`${frase} `+ element);
+  } 
+}
+console.log(frase)
 //6º: mostraremos el mensaje final guardado en la cima
-
+console.log(recorrido[8].cima );
 //por ultimo como bonus,en un console.log mostraremos por pantalla las urls de todas las imagenes de los materiales y en otro haremos la media de la altitud de todas la cimas que hemos subido.

@@ -1,0 +1,1 @@
+// Hay dos metodos querySelector y querySelectorAll

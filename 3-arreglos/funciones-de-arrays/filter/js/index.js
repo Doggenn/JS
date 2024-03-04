@@ -15,10 +15,10 @@ const alumnos = [
     { nombre: 'Mario2', nota: 4 },
     { nombre: 'Ana2', nota: 6 },
     { nombre: 'Darwin2', nota: 8 },
-    { nombre: 'Juan', nota: 3 },
-    { nombre: 'Mario2', nota: 4 },
+    { nombre: 'Juan3', nota: 3 },
+    { nombre: 'Mario3', nota: 4 },
     { nombre: 'Ana3', nota: 6 },
-    { nombre: 'Darwin2', nota: 8 },
+    { nombre: 'Darwin3', nota: 8 },
 ]
 
 let aprobados = "";
@@ -43,7 +43,6 @@ resultado = mirarNotas(alumnos);
 console.log(resultado.aprobados);
 console.log(resultado.suspensos);
 
- 
 
 
 /*console.log(resultado.aprobados);

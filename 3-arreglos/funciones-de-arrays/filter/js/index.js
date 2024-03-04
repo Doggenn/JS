@@ -5,7 +5,7 @@ Filter devuelve todos los elementos que cumplen en la condicion de la array.
 
 */
 
-
+// Trabajo para casa agrandar el array a 10 elementos y separar en alumnos suspenso y aprobados.
 const alumnos = [
     { nombre: 'Juan', nota: 3 },
     { nombre: 'Mario', nota: 4 },
@@ -63,4 +63,3 @@ const frutasEncontradas = buscarFrutasPorLongitud(5);
 
 console.log(frutasEncontradas)
 
-// Trabajo para casa agrandar el array a 10 elementos y separar en alumnos suspenso y aprobados.

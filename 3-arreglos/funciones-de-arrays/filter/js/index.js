@@ -11,7 +11,7 @@ const alumnos = [
     { nombre: 'Mario', nota: 4 },
     { nombre: 'Ana', nota: 6 },
     { nombre: 'Darwin', nota: 8 },
-    { nombre: 'Juan', nota: 3 },
+    { nombre: 'Juan2', nota: 3 },
     { nombre: 'Mario2', nota: 4 },
     { nombre: 'Ana2', nota: 6 },
     { nombre: 'Darwin2', nota: 8 },

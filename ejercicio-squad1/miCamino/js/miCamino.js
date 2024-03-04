@@ -214,18 +214,18 @@ for (let i = 0; i < miCamino.cimas.length; i++) {
 //5º: para llegar a la cima tendremos que darnos aliento y decirnos la frase que esta divida y que tiene que quedar así: "Tranquilo,lo peor ha pasado ya.¡Animo!
 for (let i = 0; i < miCamino.subiendoAlEverest.length; i++) {
   const campo1 = miCamino.subiendoAlEverest[i];
-  console.log(`${campo1[i]}`)
+  //console.log(`${campo1[i]}`)
   for (let j = 0; j < campo1.length; j++) {
     const campo2 = campo1[j];
-    console.log(`${campo2[j]}`)
+    //console.log(`${campo2[j]}`)
     for (let k = 0; k < campo2.campoBase.length; k++) {
       const campo3 = campo2.campoBase[k];
       for (let l = 0; l < campo3.campoI.campoII.campoIII.campoIV.length; l++) {
-                const valor = campo3.campoI.campoII.campoIII.campoIV[l];
-                if (typeof valor === 'object') {
-                    console.log(valor.cima);
+                const campo4 = campo3.campoI.campoII.campoIII.campoIV[l];
+                if (typeof campo4 === 'object') {
+                    console.log(campo4.cima);
                 } else {
-                    console.log(valor);
+                    console.log(campo4);
                 }
             }
     }
@@ -236,11 +236,11 @@ for (let i = 0; i < miCamino.subiendoAlEverest.length; i++) {
 for (const campo1 of miCamino.subiendoAlEverest) {
   for (const campo2 of campo1) {
     for (const campo3 of campo2.campoBase) {
-      for (const campo4 of campo3) {
-        if (typeof valor === 'object') {
-          console.log(valor.cima);
+      for (const campo4 of campo3.campoI.campoII.campoIII.campoIV) {
+        if (typeof campo4 === 'object') {
+          console.log(campo4.cima);
         } else {
-          console.log(valor);
+          console.log(campo4);
         }
       }      
     }

@@ -26,8 +26,8 @@ let suspensos = "";
 
 
 function mirarNotas(alumnos) {
-    const alumnosAprobados = alumnos.filter(alumno => alumno.nota >= 5);
-    const alumnosSuspensos = alumnos.filter(alumno => alumno.nota < 5);
+    const alumnosAprobados = alumnos.filter(alumno => alumno.nota >= 5 && alumno.nota <=10);
+    const alumnosSuspensos = alumnos.filter(alumno => alumno.nota >=0 &&alumno.nota < 5);
     /*const suspensos = alumnos.filter((alumno) => alumno.nota <= 4) 
     const aprobados = alumnos.filter((alumno) => alumno.nota >= 5) 
     return {suspensos:suspensos,
@@ -43,6 +43,28 @@ resultado = mirarNotas(alumnos);
 console.log(resultado.aprobados);
 console.log(resultado.suspensos);
 
+
+/*
+FILTRANDO LAS NOTAS
+*/
+
+function filtrarPorNota(notaMinima, notaMaxima) {
+    const listaFiltrada = alumnos.filter(alumno => alumno.nota >= notaMinima && alumno.nota <= notaMaxima);
+    return listaFiltrada
+}
+let listasAprobados = filtrarPorNota(5, 10);
+let listaNotables = filtrarPorNota(7, 9);
+let listaSuspensos = filtrarPorNota(0, 4, 9999);
+
+function pintarListaAlumnos(lista) {
+    for (let alumno of lista) {
+        document.write(`<p>${alumno.nombre}: ${alumno.nota}</p>`)
+    }
+}
+pintarListaAlumnos(listaNotables);
+pintarListaAlumnos(listasAprobados);
+pintarListaAlumnos(listaSuspensos);
+pintarListaAlumnos(alumnos);
 
 
 /*console.log(resultado.aprobados);

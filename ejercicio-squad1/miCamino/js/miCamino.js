@@ -212,6 +212,8 @@ for (let i = 0; i < miCamino.cimas.length; i++) {
  }
 
 //5º: para llegar a la cima tendremos que darnos aliento y decirnos la frase que esta divida y que tiene que quedar así: "Tranquilo,lo peor ha pasado ya.¡Animo!
+
+const cima = '';
 for (let i = 0; i < miCamino.subiendoAlEverest.length; i++) {
   const campo1 = miCamino.subiendoAlEverest[i];
   //console.log(`${campo1[i]}`)
@@ -221,18 +223,18 @@ for (let i = 0; i < miCamino.subiendoAlEverest.length; i++) {
     for (let k = 0; k < campo2.campoBase.length; k++) {
       const campo3 = campo2.campoBase[k];
       for (let l = 0; l < campo3.campoI.campoII.campoIII.campoIV.length; l++) {
-                const campo4 = campo3.campoI.campoII.campoIII.campoIV[l];
-                if (typeof campo4 === 'object') {
-                    console.log(campo4.cima);
-                } else {
-                    console.log(campo4);
-                }
-            }
+        const campo4 = campo3.campoI.campoII.campoIII.campoIV[l];
+        if (typeof campo4 === 'object') {
+            console.log(campo4.cima);
+        } else {
+            console.log(campo4);
+        }
+      }
     }
   }
 }
 
-
+const cima2 = '';
 for (const campo1 of miCamino.subiendoAlEverest) {
   for (const campo2 of campo1) {
     for (const campo3 of campo2.campoBase) {

@@ -16,4 +16,8 @@ for (let item of items) {
     contador++;
 }
 
-items.forEach((item, index)=> document.write(`<p>${index} - ${item.name} - ${item.precio}</p>`))
+
+
+//              \/<=== Esta es la variable de los objetos dentro de la ARRAY
+//              V         V<=== Aqui se pone el nombre de la variable que en cada vuelta ira sumando 1 y sera numerico.
+items.forEach((item, contador2)=> document.write(`<p>${contador2} - ${item.name} - ${item.precio}</p>`))

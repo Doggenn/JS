@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos Inyectados</title>
+    <style>
+        .coche{
+            max-width: 100px;
+            transform: rotateZ(180deg);
+            transition: 0.5s;
+        }
+        img{
+            width: 100%;
+        }
+    </style>
+</head>
+<body style="background-color: black; color: white;">
+
+    <br><button onclick="rotIzq()">rotIZQ</button>
+    <button onclick="rotDer()">rotDER</button>
+    <br><button onclick="irIzq()">IZQ</button>
+    <button onclick="irDer()">DER</button>
+    <br><button onclick="spin()">SPIN</button>
+    <hr>
+    <div class="coche">
+        <img src="https://www.deividart.com/libres/zycars-coche_camaro-2.png" alt="">
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+</html>

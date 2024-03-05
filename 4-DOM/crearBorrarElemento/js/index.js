@@ -10,7 +10,7 @@ const arrayPoligonos = [
 const sectionPoligonos = document.querySelector('#poligonos')
 function pintarPoligonos(listaPoligonos, contenedorPoligonos) {
     for (let poligono of arrayPoligonos) {
-        const div = document.createElement('div');// Con esta linea se crea un <div></div> Vacio.
+        const div = document.createElement('div');// Con esta linea se crea un <div></div> Vacio. Para crearlo ha que usar .createElement.
         div.textContent = poligono.texto;
         div.style.backgroundColor = poligono.color;
         div.style.width = poligono.width;

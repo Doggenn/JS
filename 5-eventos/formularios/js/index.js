@@ -20,4 +20,22 @@ function cargarDatos(event) {
     }
     contactos.push(persona)
     console.log(contactos)
+    pintarContactos(contactos, ulContactos)
+}
+
+
+
+
+// CAPTURAR EL UL DONDE SE PROYECTARAN LOS CONTACTO EN FORMATO LI
+const ulContactos = document.querySelector('.contactos');
+function pintarContactos(lista, contenedor) {
+    contenedor.textContent = '';
+    for (let contacto of lista) {
+        const li = document.createElement('li') //<li></li>
+        li.textContent = `${contacto.name}: ${contacto.age}`
+        //<li>Juan: 42</li>
+
+        contenedor.appendChild(li)
+
+    }
 }

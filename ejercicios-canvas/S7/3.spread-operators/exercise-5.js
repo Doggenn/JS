@@ -7,7 +7,8 @@ const colors = ['rojo', 'azul', 'amarillo', 'verde', 'naranja'];
 ```
 */
 const colors = ['rojo', 'azul', 'amarillo', 'verde', 'naranja'];
-const copia = [...colors.slice(0, 1), ...colors.slice(2)];
+const copia = [...colors]; 
+copia.splice(2,1);
 
 console.log(colors);
 console.log(copia);

@@ -18,4 +18,4 @@ const nombres = cities.map(ciudad => {
   return ciudad;
 });
 
-console.log("Lista con nombres modificados:", nombres);
+console.log(nombres);

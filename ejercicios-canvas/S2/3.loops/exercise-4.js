@@ -12,22 +12,12 @@ const toys = [
     {id: 40, name: 'El gato con Guantes'},
     {id: 40, name: 'El gato felix'}
 ]
-const toysCopy = [...toys];
 
-for (const toy of toysCopy) {
-    if (toy.name.includes('gato')) {
-        const index = toys.indexOf(toy);
-        toys.splice(index, 1);
+const juguetes = [];
+for (const juguete of toys) {
+    if(!juguete.name.includes("gato")){
+        juguetes.push(juguete)
     }
 }
 
-console.log(toys);
-/*
-for (i=0; i>toys.length;i++) {
-    if (toys[i].name === 'El gato') {
-        toys.splice(i, 1); 
-        i--; 
-    }
-}
-
-console.log(toys);*/
+console.log(juguetes)

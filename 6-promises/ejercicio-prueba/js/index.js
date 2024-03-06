@@ -28,7 +28,7 @@ cargarDatos(url)
 //carga solo el personaje 2
 //cargarDatos(url + '2')
 //carga pagina dos
-//cargarDatos(url + '?page=2')
+cargarDatos(url + '?page=2')
 //filtrar por vivos y muertos
 //cargarDatos(url + '?status=dead')
 

@@ -6,7 +6,7 @@ document.getElementById('submitButton').addEventListener('click', () => {
         fetch(`${baseUrl}${name}`)
             .then(response => {
                 if (!response.ok) {
-                    throw new Error('Network response was not ok');
+                    throw new Error('OK');
                 }
                 return response.json();
             })
@@ -15,9 +15,9 @@ document.getElementById('submitButton').addEventListener('click', () => {
                 // Aquí puedes manejar la respuesta de la API según tus necesidades
             })
             .catch(error => {
-                console.error('There was a problem with the fetch operation:', error);
+                console.error(error);
             });
     } else {
-        console.log('Por favor, ingrese un nombre antes de consultar.');
+        console.log('Ingrese un nombre');
     }
 });

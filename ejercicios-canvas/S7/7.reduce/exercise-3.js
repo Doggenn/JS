@@ -32,3 +32,5 @@ const exams = [
 const total = exams.reduce((accumulator, exam) => accumulator + exam.score, 0);
 const puntuacion = total / exams.length;
 console.log(puntuacion); 
+
+

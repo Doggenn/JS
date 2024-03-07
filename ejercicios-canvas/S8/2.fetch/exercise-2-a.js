@@ -12,12 +12,11 @@ document.getElementById('submitButton').addEventListener('click', () => {
             })
             .then(data => {
                 console.log(data);
-                // Aquí puedes manejar la respuesta de la API según tus necesidades
             })
             .catch(error => {
                 console.error(error);
             });
     } else {
-        console.log('Ingrese un nombre');
+        console.log('Introduce un nombre.');
     }
 });

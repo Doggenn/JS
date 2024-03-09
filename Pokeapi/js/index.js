@@ -77,6 +77,7 @@ async function pintarUnCharacter(character, lugar) {
     const img = document.createElement('img'); //<img>
     img.src = infoPoke.sprites['front_default'],
     img.alt = infoPoke.name
+    img.classList.add("picture")
     const h3 = document.createElement('h3');
     h3.classList.add("nombre")
     h3.textContent = character.name

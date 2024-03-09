@@ -8,10 +8,17 @@
 body {
     background-color: rgb(206, 37, 32);
 }
+.titulo{
+    display: flex;
+    margin-top: 20px;
+    width: calc(80% - 20px);
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+}
 
-img {
+.picture {
     width: 100%;
     height: auto;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.8));
 }
 
 .characters {
@@ -25,7 +32,9 @@ img {
 
 .characters article {
     background-color: white;
+    max-width: 130px;
     width: calc(10% - 20px);
+    min-width: 115px;
     border: 1px solid black;
     padding: 10px;
     box-shadow: 2px 2px 10px #444;
@@ -34,6 +43,5 @@ img {
 }
 .nombre{
     text-transform: capitalize;
-    width: 100%;
-    height: auto;
+    font-size: calc(100% - 1%);
 }

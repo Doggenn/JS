@@ -14,11 +14,28 @@ body {
     width: calc(80% - 20px);
     filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
 }
-
+.type{
+    font-weight: bold;
+}
+p{
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    background-color: rgb(231, 231, 231);
+}
 .picture {
     width: 100%;
     height: auto;
+    background-color: rgb(167, 223, 83);
     filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.8));
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    border-bottom: 1px solid;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    
 }
 
 .characters {
@@ -31,17 +48,31 @@ body {
 }
 
 .characters article {
-    background-color: white;
+    background-color: rgb(254, 254, 245);
     max-width: 130px;
     width: calc(10% - 20px);
     min-width: 115px;
-    border: 1px solid black;
+    border: 2.5px solid black;
     padding: 10px;
     box-shadow: 2px 2px 10px #444;
     border-radius: 10px;
     text-align: center;
 }
-.nombre{
+.name{
     text-transform: capitalize;
+    background-color: rgb(187, 187, 187);
     font-size: calc(100% - 1%);
+    font-size: auto; 
+    height: 25px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-top: 2px solid black;
+    border-bottom: 1px solid black;
+}
+.capi{
+    text-transform: capitalize;
+}
+.border{
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
 }

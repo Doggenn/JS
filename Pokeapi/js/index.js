@@ -75,17 +75,29 @@ async function pintarUnCharacter(character, lugar) {
     const article = document.createElement('article'); //<article></article>
     const figure = document.createElement('figure');  //<figure></figure>
     const img = document.createElement('img'); //<img>
-    img.src = infoPoke.sprites['front_default'],
+    //const imagePoke = infoPoke.sprites.other['official-artwork']['front_default'], 
+    img.src = infoPoke.sprites.other['official-artwork']['front_default'],
     img.alt = infoPoke.name
     img.classList.add("picture")
     const h3 = document.createElement('h3');
-    h3.classList.add("nombre")
+    h3.classList.add("name")
     h3.textContent = character.name
     const p = document.createElement('p');
-    p.textContent = `Nº: ${infoPoke.id}`
+    p.textContent = `Nº: ${infoPoke.id}`;
+    const p2 = document.createElement('p');
+    p2.textContent = "Type: ";
+    p2.classList.add("type")
+    const p3 = document.createElement('p');
+    p3.textContent = infoPoke.types.map((type)=> type.type.name)//[0].type.name //+ infoPoke.types[1].type.name;
+    p3.classList.add("capi");
+    p3.classList.add("border")
+    // const p4 = document.createElement('p');
+    // //p4.textContent = infoPoke.types[1].type.name;
+    // p4.classList.add("type")
+    //     console.log(infoPoke.types[0].type.name);
 
     figure.appendChild(img)
-    article.append(figure, h3, p);
+    article.append(figure, h3, p, p2,p3, /*p4*/);
 
     lugar.appendChild(article)
 }
